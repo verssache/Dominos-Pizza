@@ -10,7 +10,7 @@
 Clone this project
 ```bash
 > git clone https://github.com/verssache/Dominos-Pizza.git
-> cd NoBadWord
+> cd Dominos-Pizza
 ```
 
 Usage
