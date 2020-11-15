@@ -26,11 +26,9 @@ foreach ($emp as $key => $akun) {
 	$email = trim($pecah[0]);
 	$custid = trim($pecah[2]);
 	// $nope = "08".mt_rand(1,9).mt_rand(1,9).random(8,0);
-	// $nope = "087733151286";
-	// $nam = "Gidhan Bagus";
-	echo "Nama: ";
+	echo color('blue', "[$no]")." Nama: ";
 	$nam = trim(fgets(STDIN));
-	echo "No: ";
+	echo color('blue', "[$no]")." No. Hp: ";
 	$nope = trim(fgets(STDIN));
 	$nama = explode(" ", $nam);
 	$first = trim($nama[0]);
@@ -128,7 +126,7 @@ function curl($url,$post,$headers,$follow=false,$method=null)
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		if ($follow == true) curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt($ch, CURLOPT_HEADER, 1);
